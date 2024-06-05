@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add this CDN link to have AOS animations activated -->
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .middle-text{
+    font-size: 100px;
+    background-image:url(background.webp);
+    background-size: 200% auto;
+    display: flex;
+justify-content: center;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: animate 30s alternate infinite;
+   font-weight: 600;
+-webkit-text-stroke: 1px #ccc ;
+
+}
+.middle-text-2{
+    font-size: 50px;
+    background-image:url(background.webp);
+    background-size: 200% auto;
+    display: flex;
+justify-content: center;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: animate 30s alternate infinite;
+   font-weight: 600;
+-webkit-text-stroke: 1px #ccc ;
+
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.img1{
+    height: 250px;
+    width: 250px;
+    border: 1px solid white;
+    background-image: url(logo\ 2.jpg);
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+</style>
+<body>
+
+    <div class="middle-text" style="margin-top: 200px; ">
+       Salaah
+    </div>
+    <div class="middle-text-2" style="margin-bottom: 200px;">
+        The Mentor Community
+    </div>
+    <div class="heading">
+        1) Fade Animations
+    </div>
+    <div class="row">
+        <div class="img1" data-aos="fade-up"></div>
+        <div class="img1" data-aos="fade-down"></div>
+        <div class="img1" data-aos="fade-right"></div>
+
+    </div>
+    <div class="heading">
+        2) Flip Animations
+    </div>
+    <div class="row">
+        <div class="img1" data-aos="flip-up"></div>
+        <div class="img1" data-aos="flip-right"></div>
+        <div class="img1" data-aos="flip-down"></div>
+
+    </div>
+    <div class="heading">
+        3) Zoom Animations
+    </div>
+    <div class="row">
+        <div class="img1" data-aos="zoom-in"></div>
+        <div class="img1" data-aos="zoom-in-up"></div>
+        <div class="img1" data-aos="zoom-in-down"></div>
+
+    </div>
+    <div class="heading">
+        4) Duration Animations
+    </div>
+    <div class="row">
+        <div class="img1" data-aos="fade-up"
+        data-aos-duration="3000"></div>
+        <div class="img1" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"></div>
+        <div class="img1" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"> </div>
+
+    </div>
+<!-- add this script at the last of the body in order to activate the AOS animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

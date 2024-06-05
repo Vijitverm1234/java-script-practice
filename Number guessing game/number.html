@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let min=100;
+        let max=200;
+        let random=Math.floor(Math.random()*(max-min))+min;
+        let attempts=0;
+        let guess;
+        let runing=true;
+        console.log(random)
+        while(runing){
+            guess=window.prompt(`guess the number ${min} and ${max}`);
+            guess=Number(guess);
+            console.log(typeof guess)
+            if(isNaN(guess)){
+                window.alert("please enter a valid number");
+            }
+            else if( guess<min || guess>max){
+                window.alert("please enter a valid number");       
+            }
+            else{
+                attempts++;
+                if(guess<random){
+                    window.alert("Too low !! guess again");
+                }
+                else if( guess>random){
+                    window.alert("Too large !! guess again");
+                }
+                else{
+                    alert("You've got it"+` answer is ${random} and total number of attempts ${attempts}`) 
+                    runing=false;
+                }
+            }
+           
+        }
+
+    </script>
+</body>
+</html>
