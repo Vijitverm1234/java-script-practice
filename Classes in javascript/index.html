@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // static : keyword that defines propertirs and method that belong to class itself not the object created from that class (class owns everthing that static not the object)
+        class MathUtil{
+            static pi=3.14159;
+            static getDiamter(radius){
+                this.radius=radius;
+                return radius*2;
+            }
+            static getCircum(){
+                console.log(Math.round(2*this.pi*this.radius));
+            }
+            static getArea(){
+                console.log(Math.round(this.pi*Math.pow(this.radius,2)));
+            }
+        }
+        console.log("area of the cirecle is "+Math.round( MathUtil.pi*7*7)+"m^2");
+        console.log("Diamter : "+MathUtil.getDiamter(10));
+        MathUtil.getCircum();
+        MathUtil.getArea();
+        class User{
+            static userCount=0;
+            constructor(username){
+this.username=username;
+User.userCount++;
+            }
+            sayHello(){
+                console.log(`My username:${this.username}`);
+            }
+        }
+        const name=new User("Vijit verma");
+        const name1=new User("Vijit verma 1");
+        const name2=new User("Vijit verma 2");
+        name.sayHello();
+        name1.sayHello();
+        name2.sayHello();
+
+       console.log( User.userCount)
+    </script>
+</body>
+</html>

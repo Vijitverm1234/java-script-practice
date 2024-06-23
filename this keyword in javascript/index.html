@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // this = reference to the object where This is used (the object depends on ths immediate context)
+        const person={
+            name:"Vijit verma" ,
+            favFood:"burger",
+            sayHello: function(){
+                console.log(`hello I Am ${this.name} and eating his favourite food ${this.favFood}`);
+            }
+
+        }
+        person.sayHello();
+// console.log(this) does not work with arrow function and moreover the fact this statement will return reference
+//constructor: special method for defining the properties and methods of the objects
+function car(make, model, year , color){
+this.make=make;
+this.model=model;
+this.year=year;
+this.color=color;
+this.submit1=function(){
+    console.log("save succesfully")
+}
+}
+const car1=new car("Today", " Maruthi","2022", "Black")
+console.log(car1);
+const car2=new car("tomorrow","tata","2024","Blue");
+console.log(car2);
+car1.submit1();
+car2.submit1();
+    </script>
+</body>
+
+</html>

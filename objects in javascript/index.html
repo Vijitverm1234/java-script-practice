@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object : a collection of related data  , here element is in the form of key value pair 
+        const person={
+            firstname:"vijit ",
+            lastnme:"verma",
+            age:30,
+            sayhello:function(){
+               console.log("hello i am sponge");
+            },
+            arrow:()=>{
+                console.log("what should i order for eating ");
+            },
+            settime:setTimeout(()=>{
+                console.log("lets sleep for 5seconds");
+            },5000)
+        }
+        console.log(person.age)
+        console.log(person.firstname)
+        console.log(person.lastnme)
+       console.log(person.sayhello)
+       person.sayhello();
+       person.arrow();
+       person.arrow();
+       // collection of realted data and property .
+    </script>
+</body>
+</html>

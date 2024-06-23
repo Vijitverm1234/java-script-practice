@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         //turn number of variables and bundle into an array 
+//         const food1="pizza"
+//         const food2="burger"
+//         const food3="sushi"
+//         function openfridge(...food){
+//             console.log(food);
+//         }
+//         function get(...food){
+//    return food;
+//         }
+//         openfridge(food1,food2,food3);
+//         // using a void function
+//         let foods=get(food1,food2,food3);
+//         //using a returning function 
+//         console.log(foods)
+//         ///after passing these items into the ...food will bundle all into an array 
+//         // this is what rest operator do in js
+function sun(...numbers){
+    let result=0;
+    for(let number of numbers){
+        result+=number;
+    }
+    return result/numbers.length;
+    
+}
+console.log(sun(1,2,3,1,4,6));
+function combinestring(...str){
+return str.join(" ");
+}
+let fullname=combinestring("vijit","verma");
+console.log(fullname)
+    </script>
+</body>
+</html>

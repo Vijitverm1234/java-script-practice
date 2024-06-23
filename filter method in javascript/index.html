@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // create a new array by filtering the elements
+        // let arr=[1,2,3,4,5]
+        // let oddnum=arr.filter(n=>{
+        //     return n%2!=0;
+        // });
+        // let newarr=arr.filter(iseven);
+        // console.log(newarr);
+        // console.log(oddnum)
+        // function iseven(element){
+        //     return element%2==0;
+        // }
+        // let age=[11,89,32,23,45,21];
+        // let result=age.filter(n=>{
+        //     return n<=18;
+        // });
+        // console.log(result)
+        // let fruit=["apple","kivi","pomegranate","banana"];
+        // let result1=fruit.filter(n=>{
+        //     return n.length<=5;
+        // })
+        // console.log(result1)
+        // ===============reduce method===========
+        // let  prices=[12,23,44,21,11,45];
+        // let result=prices.reduce((c,d)=>(c+d));
+        // console.log(result)
+        // // it took two argument the accumulator and the element 
+        // let price=[11,23,24,53,23];
+        // let result3=price.reduce((c,d)=>{
+        //     return Math.max(c,d);
+        // })
+        // console.log(result3)
+        // ========Function expression====
+        //a way to define a function as values
+        // const hello=function(){
+        //     console.log("hello");
+        // }
+        // hello();
+        // const sum1=function(a,b){
+        //     console.log(a+b);
+        // }
+        // setTimeout(sum1(12,23),5000);
+        // let num=[1,2,3,4,5,6];
+        // function sq(element){
+        //     return Math.pow(element,3);
+        // }
+        // const sq1=num.map(sq);
+        // console.log(sq1)
+    //   ===========Arrow function========
+    // consise way to write the function expression good for the  simple function that you use only once
+    const hello=function(){
+        console.log("hello")
+    }
+    hello();
+    const hello1=()=>console.log("arrow function")
+    hello1();
+    const hello3=(name)=>console.log(`yo tomorrow copy will be shown to us by ${name}`)
+    hello3("Utkash sir")
+    setTimeout(hello3,3000);
+    setTimeout(()=>{
+        console.log("consised way lol");
+    },30000);
+    //function can be used to replace the callback function 
+    // (parameter)=>some code 
+    </script>
+</body>
+</html>

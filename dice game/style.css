@@ -1,0 +1,28 @@
+#container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(89, 89, 197);
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(53, 53, 199);
+
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
