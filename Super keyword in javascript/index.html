@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // used to call the constructor , access the property of a parent
+        //this=this.object
+        class Animal {
+            constructor(name,age) {
+    this.name=name;
+    this.age=age;
+
+            }
+            display(){
+                console.log(`this animal is ${this.name} and can live upto a years of ${this.age}`);
+
+            }
+        }
+        class Rabit extends Animal {
+
+            constructor(namee, age, runspeed) {
+                super(name,age);
+               
+                this.runspeed = runspeed;
+            }
+        }
+        class Fish extends Animal {
+
+            constructor(namee, age, swimspeed) {
+                super(name,age);
+                
+                this.swimspeed = swimspeed;
+            }
+        }
+    const rabbit=new Rabit("bunny",1,23);
+    const fish=new Fish("pony",2,24);
+rabbit.display();
+fish.display();
+
+
+    </script>
+</body>
+
+</html>

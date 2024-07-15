@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: max-content;
+        border: 3px solid black;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="box1" class="box">
+        
+    </div>
+    <div id="box2" class="box">
+        <p>box2</p>
+    </div>
+    <div id="box3" class="box">
+        <p>box3</p>
+    </div>
+    <div id="box4" class="box">
+        <p>box4</p>
+    </div>
+    <script>
+        // Example 1 <h1>
+        //     step1 : create the element
+        //     step2 :add the attribute / StyleProperty
+        //     step3: append the element
+        const new1=document.createElement("h1");
+        new1.textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem dolores soluta dolorum corporis harum quibusdam nostrum deserunt assumenda reiciendis alias officiis labore, quis praesentium eum voluptates natus placeat vitae"
+        // // document.body.append(new1);
+        // new1.style.fontFamily="verdana";
+        // // document.body.prepend(new1)
+        // document.getElementById("box1").append(new1);
+        // const box2=document.getElementById("box2");
+        // document.body.insertBefore(new1,box2);
+    const boxs=document.querySelectorAll(".box");
+    document.body.insertBefore(new1,boxs[0]);
+    </script>
+</body>
+
+</html>

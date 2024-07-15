@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(back.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+}
+#myH1{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container{
+    height: max-content;
+    width: max-content;
+    padding:  40px 40px 40px 40px;
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: white;
+}
+#display{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 5rem;
+    text-shadow: 2px 2x 2px white;
+}
+#controls button{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+transition: all .5s ease;
+}
+#controls button:hover{
+    transform: translateY(-5px);
+}
+

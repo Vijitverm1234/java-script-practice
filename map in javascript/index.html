@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //accepts a callback and applies that function to each element of an array , then return a new array 
+    //    const number=[1,2,3,3]
+    //    const result=number.map(sqare);
+    //    function sqare(element){
+    //     return Math.pow(element,2);
+    //    }
+    //    console.log(result);
+    let student=["vijit", "vatsal", "vimal"];
+    let result=student.map(upper);
+    function upper(element){
+       return  element.toUpperCase();
+    }
+    let date=["2024-1-10","2024-9-12","2024-10-31"];
+    let result1=date.map(arrange);
+    function arrange(element){
+        const parts=element.split("-");
+        return `${ parts[1]}/${parts[2]}/${parts[0] }`;
+    }
+    console.log("Result for dates : "+result1)
+
+    console.log("Result for Names : "+ result)
+    </script>
+</body>
+</html>

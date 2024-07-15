@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //========local vs global variable =======
+        let x=3;
+        fun1()
+        fun2();
+        function fun1(){
+            let x=1; // local varable has more precidence than global instances
+        console.log(x);
+        }
+        function fun2(){
+            var x=2;
+            console.log(x);
+        }
+        
+    </script>
+</body>
+</html>

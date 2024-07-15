@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+  background-image: url(back.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height: 100vh;
+    
+    
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    text-align: center;
+    height: max-content;
+    width: max-content;
+    padding:  40px 40px 40px 40px;
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: white;
+}

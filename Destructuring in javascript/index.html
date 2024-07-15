@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // used to extract value from the arrays and objects then assign to a varaible in an efficient way 
+        //[] used in array destructuring
+        //{} used in object destructuring
+        // swp the value of two variable
+        // let a=1;
+        // let b=2;
+        // console.log(a+" "+b);
+        // [a,b]=[b,a];
+        // console.log(a+" "+b);
+        // const colors=["red","green","blue","white"];
+        // [colors[0],colors[4]]=[colors[4],colors[0]];
+        // console.log(colors);
+        //example 3
+        // const colors=["red","green","blue","white"];
+        // const [a,b,c]=colors;
+        // console.log(a," ",b," ",c);
+        //example 4
+        const person1 = {
+            name: "vijit",
+            lname: "verma",
+            age: 34
+        }
+        const person2 = {
+            name: "vatsal",
+            lname: "verma",
+            age: 35
+        }
+        const { name, lname, age } = person1;
+        console.log(name, " ", lname, " ", age);
+        function displayPerson({ name, lname, age }) {
+            console.log("NAME ", name, " Lastname ", lname, " AGE ", age);
+        }
+        displayPerson(person2);
+        displayPerson(person1);// this is an example of destructuring when passed as an perimter
+  // we can also have the default values
+  
+    </script>
+</body>
+
+</html>

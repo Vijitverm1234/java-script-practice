@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        /* scroll-behavior: smooth; */
+    }
+    .heading{
+        font-weight: 600;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .box{
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin-top: 30px;
+    }
+    .heading-1{
+        font-size: 1em;
+        font-weight: 600;
+        /* writing-mode: vertical-lr; */
+    }
+    .img{
+        /* transform: scale(-1); */
+    }
+    .example3{
+        overflow: auto;
+        resize: both;
+    }
+    .example4{
+        transition: all 0.5s ease;
+    }
+    .example4:hover{
+        transform: scale(1.1);
+    }
+ a{
+    text-decoration: none;
+     color: black;
+
+ }
+ button{
+    color: white;
+    background: black;
+    font-size: 2em;
+    
+ }
+</style>
+<body>
+   <div class="heading" id="hello">
+    Example 1 : Text Flip
+   </div>
+    <div class="box">
+        <div class="heading-1">
+  Flip-text
+        </div>
+        <div class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ut, aliquam facere excepturi quis ipsa. Facere minima veniam illo dolore similique itaque quisquam recusandae reprehenderit, error suscipit dolores deleniti odio?
+        </div>
+
+    </div>
+
+
+    
+    <div class="heading">
+        Example 2 : Image Flip
+       </div>
+        <div class="box">
+          
+            <div class="para img">
+                <img src="salaah 1.jpeg" alt="" height="200" width="200">
+            </div>
+            
+        </div>
+
+
+
+        <div class="heading">
+            Example 3 : Resize everything
+           </div>
+            <div class="box example3">
+               
+                <div class="para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ut, aliquam facere excepturi quis ipsa. Facere minima veniam illo dolore similique itaque quisquam recusandae reprehenderit, error suscipit dolores deleniti odio?
+                </div>        
+            </div>
+
+
+
+            <div class="heading">
+                Example 4 : Transitions and  Scale
+               </div>
+                <div class="box example4">
+                   
+                    <div class="para">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ut, aliquam facere excepturi quis ipsa. Facere minima veniam illo dolore similique itaque quisquam recusandae reprehenderit, error suscipit dolores deleniti odio?
+                    </div>        
+                </div>
+
+
+
+
+                <div class="heading">
+                    Example 5 : Smooth Scrolling
+                   </div>
+                    <div class="box example5">
+                       
+                        <div class="para">
+                            <a href="#hello"><button >Click me</button></a> 
+                            <!-- must go to the example no. 1 -->
+                        </div>        
+                    </div>
+            
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    document.getElementById("");
+    document.getElementByClassName("");
+    <h1 id="my-heading">
+        For Are Us
+
+    </h1>
+    <div class="fruit">apple</div>
+    <div class="fruit">banana</div>
+    <div class="fruit">berry</div>
+    <h4>Root vegetable </h4>
+    <ul>
+        <li>beets</li>
+        <li>carrot</li>
+        <li>patato</li>
+    </ul>
+    <h4>Non vegetable </h4>
+    <ul>
+        <li>celery</li>
+        <li>onion</li>
+        <li>brocalli</li>
+    </ul>
+    <script>
+        const myhead = document.getElementById("my-heading")
+        myhead.style.backgroundColor = "yellow";
+        myhead.style.textAlign = "center"
+        console.log(myhead)
+        //getelementbyclassnanme gives the html collect
+        const fruit = document.getElementsByClassName("fruit");
+
+        fruit[0].style.backgroundColor = "#3498db"
+
+        console.log(fruit)
+        const h4 = document.getElementsByTagName("h4");
+        h4[0].style.backgroundColor = "#4488dc"
+        for (let h of h4) {
+            h.style.fontFamily = "verdana"
+        }
+        const fruit1=document.querySelectorAll(".fruit")
+        console.log(fruit1)
+        // can traverse through for each unlike the 
+        // querry selector will return the first element and qurrey selector will return the querry selector will return the Node list
+        //DOM navigation
+        //.firstElementChild'
+        //.LastElementChild
+        //.parentElement
+
+    </script>
+</body>
+
+</html>

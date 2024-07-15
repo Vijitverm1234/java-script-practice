@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        font-size: 4rem;
+        border: none;
+padding: 10px 25px;
+
+    }
+    .enabled{
+background-color: rgb(117, 117, 230);
+color: white;
+    }
+    .hover{
+        box-shadow: 0 0 10px rgb(50, 48, 48);
+        font-weight: 600;
+    }
+    .disabled{
+        background-color: beige;
+        color: black;
+    }
+</style>
+<body>
+<button id="btn">My button</button>
+<script>
+    const mybtn=document.getElementById("btn");
+    mybtn.classList.add("enabled");
+    // mybtn.classList.remove("enabled")
+    // mybtn.addEventListener("mouseover",()=>{
+    //     mybtn.classList.add("hover")
+    // })
+    // mybtn.addEventListener("mouseout",()=>{
+    //     mybtn.classList.remove("hover")
+    // })
+    mybtn.addEventListener("click",event=>{
+        mybtn.classList.replace("enabled","disabled")
+    })
+</script>
+</body>
+</html>

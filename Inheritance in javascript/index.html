@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //aloows to from new class from the existing one
+        class Animal {
+            alive = true;
+            eat() {
+                console.log(`this ${this.name} is eating`);
+            }
+            sleep() {
+                console.log(`this ${this.name} is sleeping`)
+            }
+        }
+        class Rabbit extends Animal{
+      name="rabit";
+        }
+        class Fish extends Animal{
+            name="Fish";
+            eat(){
+                console.log("not eating anything because of sickness")
+            }
+            //overridling of method
+        }
+        let fish=new Fish();
+        fish.eat();
+        fish.sleep();
+        let rabbit=new Rabbit();
+        rabbit.eat();
+        rabbit.sleep();
+        console.log(rabbit.alive)
+        rabbit.alive=false;
+        console.log(fish.alive)
+        console.log(rabbit.alive)
+//helps in code reusablity 
+    </script>
+</body>
+
+</html>

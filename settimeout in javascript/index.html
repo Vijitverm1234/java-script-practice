@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="StartTimer()">start</button>
+    <button onclick="ClearTimer()">Clear</button>
+
+    <script>
+
+// allows the execution of the function after the certain period of the time 
+// times are appropriate (avries based on cretain period of the time)
+
+// syntax(callback, delay);
+// function sayhello(){
+//     alert("hello this is me");
+// }
+// setTimeout(sayhello,3000);
+// const timeoutid=setTimeout(()=>{
+// alert("this is me used the annonymous function ");
+// },3000);
+// // clearTimeout(timeoutid);
+let Timeoutid;
+function StartTimer(){
+    Timeoutid= setTimeout(() => {
+        alert("successfully learned a new concept");
+    }, 3000);
+    console.log("started");
+}
+function ClearTimer(){
+    clearTimeout(Timeoutid);
+    console.log("cleared")
+}
+    </script>
+</body>
+</html>

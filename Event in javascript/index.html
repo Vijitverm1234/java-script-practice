@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        background-color: lightgreen;
+        font-size: 4.5rem;
+        font-weight: 800;
+        width: 300px;
+        height: 300px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+#button{
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+
+}
+</style>
+<body>
+    <h1>Events in javascript</h1>
+    <div id="box">
+        click me 🥹
+    </div>
+    <button id="button">Click me</button>
+    <script>
+        // Used to add specific event to make the web page interactive
+//   syntax:
+//   .addEventListener(event,callback);
+const mybox=document.getElementById("box");
+function colorChange(event){
+    console.log(event);
+    mybox.style.backgroundColor="lightblue"
+    mybox.textContent="Ouch!!!!!🥺"
+}
+mybox.addEventListener("click",colorChange)
+// can also pass the anonymous function also called the arrow function
+mybox.addEventListener("mouseover",()=>{
+    mybox.style.backgroundColor="lightgreen"
+    mybox.textContent="click me 🥹"
+})
+mybox.addEventListener("mouseout",()=>{
+    mybox.style.backgroundColor="yellow"
+    mybox.textContent="Don't do it😡"   
+})
+const button=document.getElementById("button");
+button.addEventListener("click",()=>{
+    button.style.backgroundColor="lightgreen";
+
+    mybox.textContent="clicked the button 😍"
+    mybox.style.fontSize="4.1rem"
+    
+})
+// click 
+// mouseover
+// mouseout
+    </script>
+</body>
+
+</html>

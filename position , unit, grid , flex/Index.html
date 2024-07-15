@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3vh;
+        margin: 0px;
+        padding: 0%;
+    }
+
+    .parent {
+        width: 100%;
+
+        height: 300vh;
+
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(122, 122, 194);
+    }
+
+    .child {
+        width: 95%;
+        padding: 10px 10px;
+    }
+
+    .child1 {
+        position:-webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: auto;
+        background-color: greenyellow;
+        z-index: 1;
+    }
+
+    .child2 {
+        background-color: rgb(255, 68, 136);
+        position: -webkit-sticky;
+        top: 0;
+        position: sticky;
+        z-index: 2;
+    }
+
+    .child3 {
+        background-color: rgb(88, 136, 215);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+
+    ul {
+        text-align: left;
+        width: 80%;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <!-- <ul>
+   <li> all element has the static property as the default</li>
+    <li>reslative plays an important role when the child is assigned absolute it may leave the parent,so to prevent such condition the parent is assigned as relaltive so that it will lie inside the parent tag</li>
+    </ul> -->
+    <div class="parent">
+        parent
+        <div class="child1 child">child</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque optio illum dolorum magnam, quisquam
+            sequi eligendi nemo corrupti perferendis odit, beatae quibusdam sit, assumenda ab expedita sapiente eaque
+            ullam repudiandae explicabo. Obcaecati, unde? Qui eum velit, molestiae itaque praesentium incidunt earum
+            dolores asperiores, laudantium, sit voluptas accusantium dolor provident rem! Eligendi sed cumque, totam
+            molestias ab repudiandae officiis quae numquam quis nam earum delectus placeat deserunt aliquid harum rerum
+            dolorum modi. Dignissimos repellendus suscipit voluptates similique, facere, animi rerum, officiis
+            doloremque quod eaque qui? Quo aliquam eligendi ipsam eveniet reprehenderit sit perspiciatis iste ut omnis
+            maxime, aut non voluptatibus quae quibusdam eum placeat vitae. Soluta, praesentium quasi nobis alias
+            obcaecati beatae unde nemo ducimus velit nostrum, aliquam, quaerat neque quidem! Delectus eligendi facilis
+            aperiam corporis fugit commodi mollitia cumque, debitis sit excepturi dolorum temporibus quas
+            exercitationem. Praesentium, unde minus. Nisi quia, blanditiis cumque, placeat illo dolorum animi explicabo
+            rem tempore qui earum eligendi ullam! Tenetur rerum assumenda earum exercitationem asperiores! Veritatis
+            quia, consectetur nulla excepturi a, perferendis, blanditiis esse ipsa fugit doloremque aliquid
+            reprehenderit aperiam voluptate quis. Culpa voluptatibus facilis libero distinctio, quos molestias dicta
+            reprehenderit ad perferendis ratione error provident, blanditiis, fugiat minima officiis inventore possimus
+            sequi laborum.
+        </div>
+        <div class="child2 child">child</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque optio illum dolorum magnam, quisquam
+            sequi eligendi nemo corrupti perferendis odit, beatae quibusdam sit, assumenda ab expedita sapiente eaque
+            ullam repudiandae explicabo. Obcaecati, unde? Qui eum velit, molestiae itaque praesentium incidunt earum
+            dolores asperiores, laudantium, sit voluptas accusantium dolor provident rem! Eligendi sed cumque, totam
+            molestias ab repudiandae officiis quae numquam quis nam earum delectus placeat deserunt aliquid harum rerum
+            dolorum modi. Dignissimos repellendus suscipit voluptates similique, facere, animi rerum, officiis
+            doloremque quod eaque qui? Quo aliquam eligendi ipsam eveniet reprehenderit sit perspiciatis iste ut omnis
+            maxime, aut non voluptatibus quae quibusdam eum placeat vitae. Soluta, praesentium quasi nobis alias
+            obcaecati beatae unde nemo ducimus velit nostrum, aliquam, quaerat neque quidem! Delectus eligendi facilis
+            aperiam corporis fugit commodi mollitia cumque, debitis sit excepturi dolorum temporibus quas
+            exercitationem. Praesentium, unde minus. Nisi quia, blanditiis cumque, placeat illo dolorum animi explicabo
+            rem tempore qui earum eligendi ullam! Tenetur rerum assumenda earum exercitationem asperiores! Veritatis
+            quia, consectetur nulla excepturi a, perferendis, blanditiis esse ipsa fugit doloremque aliquid
+            reprehenderit aperiam voluptate quis. Culpa voluptatibus facilis libero distinctio, quos molestias dicta
+            reprehenderit ad perferendis ratione error provident, blanditiis, fugiat minima officiis inventore possimus
+            sequi laborum.
+        </div>
+        <div class="child3 child">child</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque optio illum dolorum magnam, quisquam
+            sequi eligendi nemo corrupti perferendis odit, beatae quibusdam sit, assumenda ab expedita sapiente eaque
+            ullam repudiandae explicabo. Obcaecati, unde? Qui eum velit, molestiae itaque praesentium incidunt earum
+            dolores asperiores, laudantium, sit voluptas accusantium dolor provident rem! Eligendi sed cumque, totam
+            molestias ab repudiandae officiis quae numquam quis nam earum delectus placeat deserunt aliquid harum rerum
+            dolorum modi. Dignissimos repellendus suscipit voluptates similique, facere, animi rerum, officiis
+            doloremque quod eaque qui? Quo aliquam eligendi ipsam eveniet reprehenderit sit perspiciatis iste ut omnis
+            maxime, aut non voluptatibus quae quibusdam eum placeat vitae. Soluta, praesentium quasi nobis alias
+            obcaecati beatae unde nemo ducimus velit nostrum, aliquam, quaerat neque quidem! Delectus eligendi facilis
+            aperiam corporis fugit commodi mollitia cumque, debitis sit excepturi dolorum temporibus quas
+            exercitationem. Praesentium, unde minus. Nisi quia, blanditiis cumque, placeat illo dolorum animi explicabo
+            rem tempore qui earum eligendi ullam! Tenetur rerum assumenda earum exercitationem asperiores! Veritatis
+            quia, consectetur nulla excepturi a, perferendis, blanditiis esse ipsa fugit doloremque aliquid
+            reprehenderit aperiam voluptate quis. Culpa voluptatibus facilis libero distinctio, quos molestias dicta
+            reprehenderit ad perferendis ratione error provident, blanditiis, fugiat minima officiis inventore possimus
+            sequi laborum.
+        </div>
+    </div>
+</body>
+
+</html>

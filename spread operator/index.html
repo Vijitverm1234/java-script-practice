@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ... spread operator allows us iterate such as an array or string to be extended into separte elements(upacks the elements)
+        let num=[1,2,33,1,2,55]
+        let max=Math.max(...num);
+        console.log(max);
+        let str="vijit verma"
+        let count=str.indexOf('a');
+        console.log(count)
+        console.log([...str].join("-"));
+    //============making the identical copies through the spread operators
+    let newA=[...num,78,100,"vijit"];
+    console.log(newA)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //getter: special method to make the properties readble 
+        //setter:special method to make the properties writable 
+        // helps in validating 
+        class Rectanagle{
+            constructor(length,width) {
+                this.length=length;
+                this.width=width;
+            }
+            set width(newWidth){
+                if(newWidth>0){
+                    this._width=newWidth
+                }
+                else
+                {
+                    console.error("width must be positive");
+
+                }
+            }
+            set length(newLen){
+                if(newLen>0){
+                    this._length=newLen
+                }
+                else
+                {
+                    console.error("length must be positive");
+                }
+            }
+            get length(){
+                return this._length;
+            }
+            get width(){
+                return this._width;
+            }
+            get area(){
+                return this._width*this._length;
+            }
+        }
+        const rect=new Rectanagle(10,20);
+        console.log(rect.length);
+        console.log(rect.width);
+        console.log(rect.area);
+    </script>
+</body>
+</html>

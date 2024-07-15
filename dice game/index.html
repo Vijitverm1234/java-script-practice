@@ -1,0 +1,262 @@
+=============html========= 
+<div className="container">
+        <h1 className="eve" style={{color : 'white' } }><center><b>DO's And DON'Ts</b></center></h1>
+       </div>
+       <br />
+       <br />
+       <br />
+        <div className="timeline">
+    <div className="container1 left">
+        <div className="content">
+    <h2>Do's</h2>
+            <p> Keep track of the Air Quality Index (AQI) in your area. Use reliable sources such as government websites or air quality monitoring apps.</p>
+        </div>
+        </div>
+        <div className="container1 right">
+        <div className="content">
+    <h2> Dont's</h2>
+            <p> 
+            Avoid Outdoor Exercise: Avoid outdoor activities that involve heavy exertion when pollution levels are high.</p>
+        </div>
+        </div>
+        
+            <div className="container1 left">
+        <div className="content">
+    <h2>DO's</h2>
+            <p>Limit outdoor activities, especially during times when the air quality is unhealthy.</p>
+        </div>
+        </div>
+        <div className="container1 right">
+        <div className="content">
+    <h2>Dont's</h2>
+            <p> 
+
+            Don't Use Harmful Cleaning Products: Avoid using harsh chemicals or strong cleaning products that can release harmful fumes indoors.</p>
+        </div>
+        </div>
+        
+            <div className="container1 left">
+        <div className="content">
+    <h2> Do's</h2>
+            <p>Don't Contribute to Outdoor Pollution: Reduce your carbon footprint by conserving energy and reducing, reusing, and recycling materials..
+</p>
+        </div>
+        </div>
+        <div className="container1 right">
+        <div className="content">
+    <h2>Dont's</h2>
+            <p> 
+
+            Don't Use Harmful Cleaning Products: Avoid using harsh chemicals or strong cleaning products that can release harmful fumes indoors.</p>
+        </div>
+        </div>
+        <div className="container1 left">
+        <div className="content">
+    <h2> Do's</h2>
+            <p>Promote Awareness: Educate others about the importance of reducing air pollution and its impact on health and the environment.
+</p>
+        </div>
+        </div>
+        <div className="container1 right">
+        <div className="content">
+    <h2>Dont's</h2>
+            <p> 
+
+            Avoid Idling Your Vehicle: Turn off your engine if you're parked and waiting for more than a minute, as idling contributes to unnecessary emissions.</p>
+        </div>
+        </div>
+       </div>
+==========style========
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+  }
+  
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: rgb(0, 0, 0);
+   
+  }
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  .content p{
+    color: black;
+  }
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #715cd1;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  
+  .left {
+    left: 0;
+  }
+  
+  
+  .right {
+    left: 50%;
+  }
+  
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(73, 73, 73);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: rgb(177, 186, 220);
+    position: relative;
+    border-radius: 6px;
+  }
+  @media screen and (max-width: 600px) {
+    
+    .timeline::after {
+    left: 31px;
+    }
+    
+  
+    .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+  
+    .container1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+  
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+   
+    .right {
+    left: 0%;
+    }
+  }
+  .eve{
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: xxx-large;
+    text-align: center;
+  }
+  .eve::before{
+    content: "";
+    position: absolute;
+    text-align: center;
+  transform: scaleX(0);
+  width: 100%;
+  height: 2px;
+  background: #02d5ff;
+  transition: all 0.6S ease;
+  bottom: 0;
+  left: 0;
+  }
+  .eve:hover::before{
+  transform: scaleX(1);
+  }
+  .eve:hover{
+    color: #ff0101;
+  }
+@media screen and (max-width: 600px) {
+    
+    .timeline::after {
+    left: 31px;
+    }
+    
+  
+    .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+  
+    .container1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+  
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+   
+    .right {
+    left: 0%;
+    }
+  }

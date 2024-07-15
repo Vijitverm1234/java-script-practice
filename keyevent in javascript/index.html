@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        font-size: 7rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+</style>
+<body>
+    <div id="box">
+        😍
+    </div>
+    <script>
+        /*
+        lsiten foe the specfic event and then create the interective  web page
+        */
+    //    document.addEventListener(event, callback(can be a callback or arrow function))
+  const mybox=document.getElementById("box");
+  document.addEventListener("keydown",()=>{
+    mybox.textContent="🥺"
+    mybox.style.backgroundColor="lightgreen"
+  })
+  document.addEventListener("keyup",()=>{
+    mybox.textContent="😂"
+    mybox.style.backgroundColor="lightyellow"
+  })
+  const move=10;
+  let x=10;
+  let y=10;
+  document.addEventListener("keydown",event=>{
+   
+    if(event.key.startsWith("Arrow")){
+        event.preventDefault();
+        switch(event.key){
+            case "ArrowUp":
+            y-=move;
+            break;
+            case "ArrowDown":
+            y+=move;
+            break;
+            case "ArrowLeft":
+            x-=move;
+            break;
+            case "ArrowRight":
+            x+=move;
+            break;
+        }
+    }
+    mybox.style.top=`${y}px`
+    mybox.style.left=`${x}px`
+
+  })
+    </script>
+</body>
+</html>

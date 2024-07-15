@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        font-size: 4rem;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(83, 83, 184);
+        padding: 10px 15px;
+        color: white;
+    }
+
+</style>
+<body>
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    <button class="btn">Button 3</button>
+    <button class="btn">Button 4</button>
+    <button class="btn">Button 5</button>
+    <script>
+        const btn=document.querySelectorAll(".btn");
+        console.log(btn);
+        //add html and css 
+        btn.forEach(btns=>{
+    btns.style.backgroundColor="yellow"
+    btns.textContent+="😡"
+        })
+        btn.forEach(btns=>{
+            btns.addEventListener("mouseover",event=>{
+                event.target.style.backgroundColor="lightblue"
+            })
+        })
+        btn.forEach(btns=>{
+            btns.addEventListener("mouseout",event=>{
+                event.target.style.backgroundColor="yellow"
+            })
+        })
+        const newbtn=document.createElement("button");
+        newbtn.textContent="😡😡😡"
+        newbtn.classList="btn"
+        document.body.append(newbtn)
+        console.log(btn)
+        // node list will not be updated right now
+        //just again use querry selector all
+        const btn1=document.querySelectorAll(".btn");
+ console.log(btn1)
+ //btn1 will have 6 element in the node list 
+ // use remove method to delete the element in list 
+ 
+    </script>
+</body>
+</html>

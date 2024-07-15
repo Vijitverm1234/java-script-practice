@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function defined inside the another function in the inner function , has access to avraibles
+        // function outer(){
+        //   const mess="hello world";
+        //     function inner(){
+        //         console.log(mess)
+        //     }
+        //     inner();
+        // }
+        // mess="goodbye" // different scope
+        // outer();
+  function createCnt(){ 
+    let cnt=0;
+        function incre(){
+           cnt++;
+            console.log(cnt);
+        }
+        return {cnt};
+    }
+    const counter=createCnt();
+    counter.incre();
+ 
+
+      
+
+
+
+    </script>
+</body>
+</html>

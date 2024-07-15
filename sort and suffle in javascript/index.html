@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     const arr=[1,2,3,2,23,3,10];
+    //     console.log(arr.sort());
+    // // hence sorting is done on the 
+    // // basis of the lexecographic order not 
+    // // on the basis of the string 
+    // console.log(arr.sort((a,b)=>(a-b)));
+    // const people=[
+    //     {name:"vijit", age:23, gpa:2.0},
+    //     {name:"akshay ", age:20, gpa:4.0},
+    //     {name:"vatsal", age:20, gpa:1.0},
+    //     {name:"akshit", age:21, gpa:3.0}
+    // ]
+    // console.log(people.sort((a,b)=>a.age-b.age));
+    // // sorted by the age group
+    // // this can fusther be done on the basis of the gpa
+    
+    // //example to sort the name lexecographic manner
+    // console.log(people.sort((a,b)=>a.name.localeCompare(b.name)));
+
+
+
+//=========suffle segment 
+function shuffle(array){
+    for(let i=array.length-1;i>0;i--){
+       const random=Math.floor(Math.random()*(i+1));
+       [array[i],array[random]]=[array[random],array[i]];
+    }
+
+}
+const card=['A',1,2,3,4,5,6,7,8,9,'K','J','Q'];
+shuffle(card)
+console.log(card)
+// ==========  date
+const samya=new Date();
+const year=samya.getFullYear();
+console.log(samya.getDay())
+console.log(year)
+samya.setFullYear(2023);
+console.log(samya)
+// we can also compare two dates and time 
+    </script>
+</body>
+</html>

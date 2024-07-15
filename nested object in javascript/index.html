@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // object inside the object comes under the category of nested object
+        class Person {
+            constructor(name, age, ...address) {
+                this.name = name;
+                this.age = age;
+                this.address = new Address(...address);
+            }
+        }
+        class Address {
+            constructor(name, lsname, country) {
+                this.name = name;
+                this.lsname = lsname;
+                this.country = country;
+            }
+        }
+        const person1 = new Person("vijit", "verma", "india", "chimpi", "25 street");
+        console.log(person1)
+    </script>
+</body>
+
+</html>
